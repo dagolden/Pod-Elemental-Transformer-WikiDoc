@@ -34,6 +34,9 @@ sub transform_node {
 
     my $new_doc = Pod::Elemental->read_string($new_pod);
     Pod::Elemental::Transformer::Pod5->transform_node($new_doc);
+    $new_doc->children->shift
+      while
+      $new_doc->children->[0]->isa('Pod::Elemental::Element::Pod5::Nonpod');
 
     splice @$children, $i, 1, $new_doc->children->flatten;
   }
