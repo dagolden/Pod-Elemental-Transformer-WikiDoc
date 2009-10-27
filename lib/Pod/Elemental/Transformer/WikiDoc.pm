@@ -34,7 +34,22 @@ with 'Pod::Elemental::Transformer';
 
   =item Baz
 
+  =back
+
 For complete documentation on this dialect, see L<Pod::WikiDoc>.
+
+Possibly the most succinct, powerful use case is this:
+
+  =head2 some_method
+
+  This B<public> method takes the following arguments:
+
+  =for wikidoc
+  * name
+  * rank
+  * serial_number
+
+  =cut
 
 =cut
 
@@ -67,7 +82,7 @@ sub transform_node {
   my ($self, $node) = @_;
   my $children = $node->children;
 
-  PASS: for my $i (0 .. $children->length - 1) {
+  PASS: for (my $i = 0; $i < $children->length - 1; $i++) {
     my $para = $children->[$i];
     next unless $para->isa('Pod::Elemental::Element::Pod5::Region')
          and    ! $para->is_pod
