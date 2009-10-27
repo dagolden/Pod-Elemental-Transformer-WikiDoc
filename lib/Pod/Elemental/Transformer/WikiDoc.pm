@@ -1,6 +1,7 @@
 package Pod::Elemental::Transformer::WikiDoc;
 use Moose;
 with 'Pod::Elemental::Transformer';
+use namespace::autoclean;
 
 use Moose::Autobox;
 
