@@ -18,6 +18,8 @@ __DATA__
 
 =head1 Welcome to Pod!
 
+Right??
+
 =begin wikidoc
 
 == Reasons to use WikiDoc:
