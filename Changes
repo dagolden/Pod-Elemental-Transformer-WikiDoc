@@ -1,4 +1,7 @@
 Revision history for {{$dist->name}}
 
+0.093001  2009-10-27
+          fix fencepost error that prevent last-position region from working
+
 0.093000  2009-10-27
           first release
