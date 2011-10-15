@@ -1,5 +1,8 @@
 Revision history for {{$dist->name}}
 
+{{$NEXT}}
+          repackage to add META.yml
+
 0.093001  2009-10-27
           fix fencepost error that prevent last-position region from working
 
