@@ -2,6 +2,9 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
 
+0.093003  2013-10-12 22:27:36 America/New_York
+          update bugtracker and repository
+
 0.093002  2011-10-15 18:17:54 Asia/Tokyo
           repackage to add META.yml
 
