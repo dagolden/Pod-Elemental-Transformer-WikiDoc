@@ -1,4 +1,5 @@
 package Pod::Weaver::Plugin::WikiDoc;
+
 use Moose;
 with 'Pod::Weaver::Role::Dialect';
 # ABSTRACT: allow wikidoc-format regions to be translated during dialect phase

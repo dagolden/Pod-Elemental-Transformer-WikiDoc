@@ -1,4 +1,5 @@
 package Pod::Elemental::Transformer::WikiDoc;
+
 use Moose;
 with 'Pod::Elemental::Transformer';
 # ABSTRACT: a transformer to replace "wikidoc" data regions with Pod5 elements
