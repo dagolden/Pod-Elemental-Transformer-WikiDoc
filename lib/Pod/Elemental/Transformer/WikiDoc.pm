@@ -4,6 +4,8 @@ use Moose;
 with 'Pod::Elemental::Transformer';
 # ABSTRACT: a transformer to replace "wikidoc" data regions with Pod5 elements
 
+our $VERSION = '0.093004';
+
 =head1 SYNOPSIS
 
   my $document = Pod::Elemental->read_string( $string );

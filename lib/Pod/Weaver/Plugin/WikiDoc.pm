@@ -4,6 +4,8 @@ use Moose;
 with 'Pod::Weaver::Role::Dialect';
 # ABSTRACT: allow wikidoc-format regions to be translated during dialect phase
 
+our $VERSION = '0.093004';
+
 =head1 OVERVIEW
 
 This plugin is an exceedingly thin wrapper around
@@ -24,3 +26,5 @@ sub translate_dialect {
 }
 
 1;
+
+=for Pod::Coverage translate_dialect
