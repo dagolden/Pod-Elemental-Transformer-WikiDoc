@@ -4,7 +4,7 @@ use Moose;
 with 'Pod::Weaver::Role::Dialect';
 # ABSTRACT: allow wikidoc-format regions to be translated during dialect phase
 
-our $VERSION = '0.093004';
+our $VERSION = '0.093005';
 
 =head1 OVERVIEW
 
